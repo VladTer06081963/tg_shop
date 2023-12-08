@@ -5,14 +5,14 @@ import {useTelegram} from "../../hooks/useTelegram";
 import {useCallback, useEffect} from "react";
 
 const products = [
-    {id: '1', title: 'Пельмени', price: 500, description: 'говядина/свинина Bolinhos 50/50 - carne bovina/porca', image: 'https://terabox.com/s/1LaKOADb9ShuIVz4ljEW7Xg'},
-    {id: '2', title: 'Вареники с картофелем', price: 120, description: 'Varéniki com batata', image: 'https://terabox.com/s/1LaKOADb9ShuIVz4ljEW7Xg'},
-    {id: '3', title: 'Блинчики с мясом', price: 50, description: 'Panquecas com carne', image: 'https://terabox.com/s/1LaKOADb9ShuIVz4ljEW7Xg'},
-    {id: '4', title: 'Котлеты', price: 122, description: ' говядина Costeletas de carne bovina', image: 'https://terabox.com/s/1LaKOADb9ShuIVz4ljEW7Xg'},
-    {id: '5', title: 'Паштеты', price: 50, description: 'Patê', image: 'https://terabox.com/s/1LaKOADb9ShuIVz4ljEW7Xg'},
-    {id: '6', title: 'Сырники', price: 60, description: '(печеные в духовке) Sirniki (assado no forno)', image: 'https://terabox.com/s/1LaKOADb9ShuIVz4ljEW7Xg'},
-    {id: '7', title: 'Мацони', price: 550, description: 'Matsoni', image: 'https://terabox.com/s/1LaKOADb9ShuIVz4ljEW7Xg'},
-    {id: '8', title: 'Штрудель', price: 120, description: 'Strudel', image: 'https://terabox.com/s/1LaKOADb9ShuIVz4ljEW7Xg'},
+    {id: '1', title: 'Пельмени', price: 500, description: 'говядина/свинина Bolinhos 50/50 - carne bovina/porca', image: 'https://chopio.club/uploads/posts/2022-10/1664584361_1-beolin-club-p-gamburger-risunok-krasivo-2.jpg'},
+    {id: '2', title: 'Вареники с картофелем', price: 120, description: 'Varéniki com batata', image: 'https://chopio.club/uploads/posts/2022-10/1664584361_1-beolin-club-p-gamburger-risunok-krasivo-2.jpg'},
+    {id: '3', title: 'Блинчики с мясом', price: 50, description: 'Panquecas com carne', image: 'https://chopio.club/uploads/posts/2022-10/1664584361_1-beolin-club-p-gamburger-risunok-krasivo-2.jpg'},
+    {id: '4', title: 'Котлеты', price: 122, description: ' говядина Costeletas de carne bovina', image: 'https://chopio.club/uploads/posts/2022-10/1664584361_1-beolin-club-p-gamburger-risunok-krasivo-2.jpg'},
+    {id: '5', title: 'Паштеты', price: 50, description: 'Patê', image: 'https://chopio.club/uploads/posts/2022-10/1664584361_1-beolin-club-p-gamburger-risunok-krasivo-2.jpg'},
+    {id: '6', title: 'Сырники', price: 60, description: '(печеные в духовке) Sirniki (assado no forno)', image: 'https://chopio.club/uploads/posts/2022-10/1664584361_1-beolin-club-p-gamburger-risunok-krasivo-2.jpg'},
+    {id: '7', title: 'Мацони', price: 550, description: 'Matsoni', image: 'https://chopio.club/uploads/posts/2022-10/1664584361_1-beolin-club-p-gamburger-risunok-krasivo-2.jpg'},
+    {id: '8', title: 'Штрудель', price: 120, description: 'Strudel', image: 'https://chopio.club/uploads/posts/2022-10/1664584361_1-beolin-club-p-gamburger-risunok-krasivo-2.jpg'},
 ]
 
 const getTotalPrice = (items = []) => {
